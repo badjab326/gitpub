@@ -17,7 +17,7 @@
         }
       </style>
     <h1>Welcome to gitPub!</h1>
-    
+    <h2>Drinks</h2>
     <% for (let i = 0; i < drinks.length; i++) { %>
         <ul>
             <li><a href="/drinks/<%= i %>">
@@ -26,6 +26,15 @@
             </li>
         </ul>
     <% } %>
-    
+    <h2>Food</h2>
+    <% for (let i = 0; i < food.length; i++) { %>
+        <ul>
+            <li><a href="/food/<%= i %>">
+                <%= food[i].name %>
+                </a>
+            </li>
+        </ul>
+    <% } %>
+
 </body>
 </html>
