@@ -12,8 +12,19 @@
           color: rgb(255, 255, 255);
           background-color: rgb(4, 0, 38);
         }
+        ul {
+            text-transform: capitalize;
+        }
       </style>
     <h1>Welcome to gitPub!</h1>
+    
+    <% for (let i = 0; i < drinks.length; i++) { %>
+        <ul>
+            <li>
+                <%= drinks[i].name %>
+            </li>
+        </ul>
+    <% } %>
     
 </body>
 </html>
